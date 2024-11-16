@@ -1,7 +1,7 @@
-export default function Tabs({ children, button }) {
+export default function Tabs({ children, button, Wrapper = "menu" }) {
   return (
     <>
-      <menu>{button}</menu>
+      <Wrapper>{button}</Wrapper>
       {children}
     </>
   );
